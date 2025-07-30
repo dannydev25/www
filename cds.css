@@ -1,0 +1,78 @@
+.parent { 
+    display: flex;
+    justify-content: space-around;
+    padding-top: 60px;
+}
+
+.card {
+    width: 300px;
+    box-shadow: 10px 10px 10px gray;
+    border-radius: 20px;
+}
+
+.card-img {
+    width: 100%;
+}
+
+.cardd {
+    width: 100%;
+    display: block;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.card-body {
+    padding: 5px 15px;
+}
+
+.card-flag {
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 10px;
+    color: rgb(255, 255, 255);
+    width: fit-content;
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.flag1{
+    background-color: rgb(6, 99, 231);
+}
+.flag2{
+    background-color: rgb(84, 84, 6);
+}
+.flag3{
+    background-color: red;
+}
+.card-title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.card-text{
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.card-profile-section{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 40px;
+    gap: 10px;
+}
+.profile-img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.card-profile-text{
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.profile-name{
+    font-weight: 700;
+}
+body{
+    background-image: url(images\ \(4\).jpg);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+}

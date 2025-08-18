@@ -118,16 +118,87 @@
             display: flex;
             gap: 20px;
         }
+         .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(0, 0, 0);
+            /* padding: 0px 20px; */
+            border-radius: 20px;
+            height: 70px;
+            margin-top: 15px;
+        }
+
+        .nav-link {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            list-style-type: none;
+            gap: 30px;
+        }
+
+
+        .nav-it {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+         a:hover {
+            color: rgb(0, 229, 255);
+        }
+           .menu {
+        background-color: transparent;
+        border: none;
+        font-size: 25px;
+        display: none;
+        color: rgb(255, 0, 0);
+    }
+
+    @media (max-width: 900px) {
+        .nav-link {
+            display: none;
+        }
+
+        .menu {
+            display: inline;
+        }
+    }
     </style>
 </head>
 
 <body>
-    <a href="ass4.html">first</a>
-    <a href="ass5.html">second</a>
-    <a href="ass6.html">third</a>
-    <a href="ass7.html">fourth</a>
-    <a href="second.html">fifth</a>
-    <a href="display.html">sixth</a>
+   <ol>
+        <nav class="navbar">
+            <ul class="nav-link">
+                <li class="navit"><a href="index.html">origin</a></li>
+                <li class="navit"><a href="ass2.html">assign</a></li>
+                <li class="navit"><a href="ass3.html">assign3</a></li>
+                <li class="navit"><a href="name.html">name</a></li>
+                <li class="navit"><a href="tableass.html">table</a></li>
+                <li class="navit"><a href="border.html">border</a></li>
+                <li class="navit"><a href="ass4.html">first</a></li>
+                <li class="navit"><a href="ass5.html">second</a></li>
+                <li class="navit"><a href="ass6.html">third</a></li>
+                <li class="navit"><a href="ass7.html">fourth</a></li>
+                <li class="navit"><a href="second.html">fifth</a></li>
+                <li class="navit"><a href="display.html">sixth</a></li>
+                <li class="navit"><a href="formass.html">form1</a></li>
+                <li class="navit"><a href="formass2.html">form2</a></li>
+                <li class="navit"><a href="formass3.html">form3</a></li>
+                <li class="navit"><a href="formstyle.html">form4</a></li>
+                <li class="navit"><a href="boxani.html">animation</a></li>
+                <li class="navit"><a href="ludo.html">ludo</a></li>
+                <li class="navit"><a href="checkers.html">chess</a></li>
+                <li class="navit"><a href="navbar.html">navbar1</a></li>
+                <li class="navit"><a href="navbar2.html">navbar2</a></li>
+
+            </ul>
+               <button class="menu">
+                        <i class="bi bi-list"></i>
+                    </button>
+        </nav>
+
+    </ol>
+
     <div class="big">
         <div class="post">
             <div> <i class="bi bi-geo-alt icon1 icon"></i>

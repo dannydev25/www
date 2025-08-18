@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .div {
+            background-color: blue;
+            color: brown;
+            width: fit-content;
+            font-size: 25px;
+            font-weight: 1000;
+            font-style: italic;
+            cursor: move;
+            display: none;
+        }
+
+        .stuffs {
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+            align-items: center;
+            overflow: hidden;
+            overflow-x: auto;
+            gap: 15px;
+            padding: 20px;
+            background-color: red;
+            padding: 0;
+        }
+
+        .ul {
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+            background-color: rgb(21, 255, 0);
+            width: 400px;
+            padding: 0;
+
+        }
+
+        .nested {
+            list-style-type: none;
+            display: none;
+            background-color: red;
+            color: blueviolet;
+            position: absolute;
+        }
+
+        .drop {
+            background-color: rgb(0, 0, 0);
+            color: aliceblue;
+        }
+
+        .toggle:hover .nested {
+            display: block;
+        }
+
+        /* navbar styling */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: aqua;
+            padding: 0px 20px;
+            border-radius: 20px;
+        }
+        .logo-section{
+            width: 100px;
+            height: 100px;
+             display: flex;
+            align-items: center;
+        }
+        .logo{
+            width: 70%;
+        }
+        .nav-link{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            list-style-type: none;
+            gap: 30px;
+        }
+        .cta{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .cta-btn{
+            border: none;
+            padding: 10px 20px;
+            border-radius: 30px;
+        }
+        .login-btn{
+            background-color: red;
+            color: antiquewhite;
+        }
+        .sign-btn{
+            background-color: transparent;
+            border: 1px solid greenyellow;
+            color: blue;
+
+        }
+        .nav-it{
+            text-decoration: none;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div">
+        <p>Lorem ipsum dolor sit amet <br>consectetur, adipisicing elit. Quasi,<br> necessitatibus. Amet blanditiis
+            itaque hic,
+            non voluptatum <br>saepe unde provident aliquid.</p>
+        <h2>Lorem ipsum dolor sit amet consectetur.</h2>87uy.
+    </div>
+    <div class="stuffs">
+        <img src="images.jpg" alt="" class="stuffs-img">
+        <img src="images.jpg" alt="" class="stuffs-img">
+        <img src="images.jpg" alt="" class="stuffs-img">
+        <img src="images.jpg" alt="" class="stuffs-img">
+        <img src="images.jpg" alt="" class="stuffs-img">
+        <img src="images.jpg" alt="" class="stuffs-img">
+        <img src="images.jpg" alt="" class="stuffs-img">
+        <img src="imagf;'
+        es.jpg" alt="" class="stuffs-img">
+        <img src="images.jpg" alt="" class="stuffs-img">
+        <img src="images.jpg" alt="" class="stuffs-img">
+        <img src="images.jpg" alt="" class="stuffs-img">
+        <img src="images.jpg" alt="" class="stuffs-img">
+        <img src="images.jpg" alt="" class="stuffs-img">
+    </div>
+    <ul class="ul">
+        <li class="drop ">home </li>
+        <li class="drop ">about </li>
+        <li class="drop toggle">service
+            <ul class="nested">
+                <li>Lorem, ipsum.</li>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem, ipsum.</li>
+            </ul>
+        </li>
+
+        </li>
+
+    </ul>
+
+
+
+
+    <nav class="navbar">
+        <div class="logo-section">
+            <img src="images.jpg" class="logo" alt="">
+
+        </div>
+        <ul class="nav-link">
+            <li><a class="nav-it" href="">HOME</a></li>
+            <li> <a class="nav-it" href="">ABOUT</a></li>
+            <li><a class="nav-it" href="">SERVICES</a></li>
+            <li><a class="nav-it" href="">CONTACT</a></li>
+        </ul>
+        <div class="cta">
+            <button class="cta-btn login-btn">LOGIN</button>
+            <BUtton class="cta-btn sign-btn">SIGNUP</BUtton>
+        </div>
+    </nav>
+
+
+
+
+
+</body>
+
+</html>

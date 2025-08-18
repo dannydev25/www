@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>Document</title>
+    <style>
+        .parent {
+            display: flex;
+            justify-content: center;
+            padding-top: 60px;
+            gap: 30px;
+        }
+
+        .card {
+            width: 260px;
+            border: 2px solid black;
+            padding-bottom: 40px;
+
+        }
+
+        .card-img {
+            width: 100%;
+        }
+
+        .cardd {
+            width: 100%;
+            display: block;
+            border-radius: 20px 20px 0px 0px;
+        }
+
+        .card-body {
+            padding: 5px 15px;
+        }
+
+        .card-flag {
+            padding: 5px 10px;
+            border-radius: 10px;
+            font-size: 10px;
+            color: rgb(255, 255, 255);
+            width: fit-content;
+            font-weight: 700;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .flag1 {
+            background-color: rgb(6, 99, 231);
+        }
+
+        .card-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bolder;
+        }
+
+        .card-text {
+            text-align: center;
+        }
+
+        .bttn {
+            padding: 10px 60px;
+            border-radius: 50px;
+            background-color: black;
+            color: white;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+        }
+
+        .bbtn {
+            background-color: white;
+            color: red;
+            border: none;
+        }
+
+        .viva {
+
+            background-color: red;
+        }
+        .icon{
+            display: flex;
+            justify-content: center;
+        }
+        .icc{
+            font-size: 50px
+        }
+        @media(max-width: 700px){
+            .parent{
+                flex-direction: column;
+                 display: flex;
+            }
+            .card{
+                width: 50%;
+                height: 400px;
+            }
+
+        }
+        /* @media(max-width: 900px){
+            .parent{
+                /* background-color: black; */
+            
+    </style>
+</head>
+
+<body>
+
+    <div class="parent">
+        <div class="card">
+            <div class="card-body">
+                  <div class="icon">
+                    <i class="bi bi-twitter icc "></i>
+                </div>
+                <h2 class="card-title">TWITTER</h2>
+                <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores incidunt iste reiciendis nobis
+                    et
+                    autem ratione magni expedita ducimus.
+                </p>
+                <div class="card-profile-section">
+                    <div class="card-profile-text">
+                    </div>
+                </div>
+            </div>
+            <div class="btn"><button class="bttn">READ MORE</button></div>
+        </div>
+
+
+        <div class="card viva">
+            <div class="card-img"></div>
+            <div class="card-body" style="color: white;">
+                <div class="icon">
+                    <i class="bi bi-instagram icc"></i>
+                </div>
+                <h2 class="card-title"> INSTAGRAM</h2>
+                <div class="card-text">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores incidunt iste reiciendis
+                        nobis
+                        et
+                        autem ratione magni expedita ducimus.
+                    </p>
+                </div>
+                <div class="card-profile-section">
+                    <div class="card-profile-text">
+                    </div>
+                </div>
+            </div>
+            <div class="btn"><button class="bttn bbtn">READ MORE</button></div>
+        </div>
+
+
+        <div class="card">
+            <div class="card-body">
+                  <div class="icon">
+                    <i class="bi bi-youtube icc"></i>
+                </div>
+                <h2 class="card-title">YOUTUBE</h2>
+                <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores incidunt iste reiciendis nobis
+                    et
+                    autem ratione magni expedita ducimus.
+                </p>
+            </div>
+            <div class="btn"><button class="bttn">READ MORE</button></div>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -6,24 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        h1 {
-            text-align: center;
-            padding-top: 100px;
-            font-size: 80px;
-        }
-
-        body {
-            background-image: url(pic1.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: blue;
+            margin-left: 250px;
+            animation: movearound 2s linear infinite;
 
         }
 
-        button {
-            padding: 10px 40px;
-            border: none;
-            background-color: red;
-            color: antiquewhite;
+        @keyframes movearound {
+            0% {
+                margin-left: 200px;
+                margin-top: 0px;
+            }
+
+            12.5% {
+                margin-left: 400px;
+                margin-top: 0;
+            }
+
+            25% {
+                margin-top: 100px;
+                margin-left: 500px;
+            }
+
+            37.5% {
+                margin-top: 200px;
+                margin-left: 500px;
+            }
+
+            50% {
+                 margin-left: 200px;
+                margin-top: 300px;
+            }
+
+            62.5% {
+                 margin-top: 100px;
+                 margin-left: 0px;
+            }
+
+            75% {
+              margin-top: 100px;
+              margin-left: 20px;
+            }
+            87.5%{
+                margin-left: 200px;
+                margin-top: 0px;
+            }
+            100%{
+                margin-left: 200px;
+                margin-top: 0px;
+            }
+            
+            
+
         }
          .navbar {
             display: flex;
@@ -53,10 +90,12 @@
             color: rgb(0, 229, 255);
         }
     </style>
+
+
 </head>
 
 <body>
-   <ol>
+  <ol>
         <nav class="navbar">
             <ul class="nav-link">
                 <li class="navit"><a href="index.html">origin</a></li>
@@ -86,9 +125,7 @@
 
     </ol>
 
-    <h1>Startup AMP HTML <br> Template</h1>
-    <center><button style="background-color: green;">buy now</button> <button>DEMO PAGES</button></center>
-
+    <div class="box"></div>
 </body>
 
 </html>

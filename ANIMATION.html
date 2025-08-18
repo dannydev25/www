@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /* transform: translate(190px, 200px); */
+            /* transform: scale(3); */
+            /* transform: scaleX(6); */
+            /* transform: rotate(40deg) skew(40deg); */
+            /* transition-property: background-color;
+            transition-duration: 3s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 1s; */
+            transition: background-color 3s ease-in, transform 2s ease-in 1s;
+        }
+
+        .box:hover {
+            background-color: rgb(37, 40, 144);
+            transform: rotate(30deg);
+        }
+
+        .btn {
+            padding: 10px;
+            border-radius: 20px;
+            background-color: blue;
+            color: chartreuse;
+            transition: all 3s ease-in,  2s ease-in 1s;
+            padding-left: 60px;
+            padding-right: 60px;
+            margin-left: 50px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: cyan;
+            color: rgb(251, 255, 0);
+            transform: rotate(360deg);
+        }
+        .car{
+            font-size: 30px;
+            transform: rotateY(180deg);
+            width: fit-content;
+            /* animation-name: movecar;
+            animation-duration: 2s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
+            animation-direction: alternate-reverse; */
+            animation: movecar 3s ease infinite alternate-reverse 2s;
+        }
+        @keyframes movecar{
+            from{
+                margin-left: 0;
+            }
+            
+            to{
+                margin-left: 600px  ;
+            }
+
+            
+        }
+        .box2{
+            background-color: gold;
+             animation: movearound 1s linear 0s infinite;
+        }
+        @keyframes movearound{
+            0%{
+                margin-left: 0;
+            }
+            25%{
+                margin-left: 500px;
+                margin-top: 0;
+            }
+            50%{
+                margin-top: 300px;
+                margin-left: 500px;
+            }
+            75%{
+                margin-left: 0;
+                margin-top: 300px;
+            }
+            100%{
+                margin-top: 0;
+                margin-left: 0;
+            }
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="box"></div><br><br><br><br>
+    <button class="btn">ACTION</button><br>
+   <div class="car">🚐</div> 
+ <div class="box box2"></div>
+
+
+</body>
+
+</html>

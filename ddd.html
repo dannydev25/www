@@ -17,11 +17,8 @@
         }
 
         .bred {
-            display: flex;
-            justify-content: space-around;
-            background-color: rgb(67, 67, 248);
             color: rgb(227, 225, 225);
-            height: 300px;
+            font-size: large;
         }
 
         .text {
@@ -30,18 +27,19 @@
 
         }
 
-        .rew {
+        /* .rew {
             list-style-type: lower-roman;
-        }
+        } */
 
         .rewt {
             list-style-type: square;
         }
+
         .navbar {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: rgb(239, 225, 225);
+            background-color: rgb(162, 162, 162);
             /* padding: 0px 20px; */
             border-radius: 20px;
             height: 70px;
@@ -61,7 +59,8 @@
             text-decoration: none;
             color: rgb(255, 0, 0)
         }
-         a:hover {
+
+        a:hover {
             color: rgb(0, 229, 255);
         }
     </style>
@@ -71,6 +70,7 @@
     <ol>
         <nav class="navbar">
             <ul class="nav-link">
+                 <h2 class="text-blue-900 font-black">DAN'S <br> ASSIGNMENT</h2>
                 <li class="navit"><a href="index.html">origin</a></li>
                 <li class="navit"><a href="ass2.html">assign</a></li>
                 <li class="navit"><a href="ass3.html">assign3</a></li>
@@ -123,42 +123,50 @@
             <li class="me-2">
                 <button id="settings" data-tabs-target="#my-settings" role="tab" aria-selected="false"
                     class="inline-flex items-center justify-center p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 group">
-                    <img src="img5.jpg" alt="" class="w-10 h-10"></i>FRIED RICE
+                    <img src="img5.jpg" alt="" class="w-10 h-10 gap-7       "></i>FRIED RICE
                 </button>
             </li>
 
         </ul>
     </div>
 
-    <div id="my-tabs-content">
-        <div class="bred" id="my-dashboard" role="tabpanel">
-            <ol class="rew">
-                <h2 class="ret">METHOD OF PREPARATION</h2>
-                List of ingredients:
-                <li>Rice</li>
-                <li>Tomatoes</li>
-                <li>pepper</li>
-                <li>onions</li>
-                <li>salt</li>
-                <li>cube seasoning</li>
-                <li>fish/meat (optional)</li>
-            </ol>
-            <br>
-            <ol class="rewt">
-                <h3 class="text">How to cook:</h3>
-                <li>First put 3cups of rice in a bowl and wash with water and salt to remove starch </li>
-                <li>Put the washed rice in a pot and add salt then let it boil for about 15-20mins </li>
-                <li> Drain the rice with a sieve and set aside</li>
-                <li> wash the tomatoes the pepper and the onions then put in a blender and blend until smooth </li>
-                <li> In another pot put in some oil and let it heat up </li>
-                <li>then put in the blended mix add salt, seasoning and the fried fish and let it fry for about 10mins.
-                </li>
-                <li> Serve on a flat plate with any type of drink to your like </li>
-            </ol>
-            <img src="img6.jpg" alt="" class="w-64 h-full">
+    <div class="max-w-5xl mx-auto p-6">
+        <div id="my-tabs-content">
+            <div class="bred flex flex-col lg:flex-row bg-blue-700 h-fit " id="my-dashboard" role="tabpanel">
+                <img src="img6.jpg" alt="" class="w-fit h-fit ">
+                <div>
+                    <p></p>
+                    <ol class="rew">
+                        <h2 class="ret">METHOD OF PREPARATION</h2>
+                        List of ingredients:
+                        <li>Rice</li>
+                        <li>Tomatoes</li>
+                        <li>pepper</li>
+                        <li>onions</li>
+                        <li>salt</li>
+                        <li>cube seasoning</li>
+                        <li>fish/meat (optional)</li>
+                    </ol>
+                    <br>
+                    <ol class="rewt">
+                        <h3 class="text">How to cook:</h3>
+                        <li>First put 3cups of rice in a bowl and wash with water and salt to remove starch </li>
+                        <li>Put the washed rice in a pot and add salt then let it boil for about 15-20mins </li>
+                        <li> Drain the rice with a sieve and set aside</li>
+                        <li> wash the tomatoes the pepper and the onions then put in a blender and blend until smooth
+                        </li>
+                        <li> In another pot put in some oil and let it heat up </li>
+                        <li>then put in the blended mix add salt, seasoning and the fried fish and let it fry for about
+                            10mins.
+                        </li>
+                        <li> Serve on a flat plate with any type of drink to your like </li>
+                    </ol>
+                </div>
+            </div>
 
         </div>
-        <div class="bred" id="my-profile" role="tabpanel">
+        <div class="bred flex justify-around bg-blue-700 h-80" id="my-profile" role="tabpanel">
+            <img src="img4.jpg" alt="" class="w-80 h-full mr-36">
             <ol class="rew">
                 <h2 class="ret">METHOD OF PREPARATION</h2>
                 List of ingredients:
@@ -184,13 +192,13 @@
                 <li> Serve on a flat plate with any type of drink to your like </li>
                 <li>You can also serve with meat or fish depending on your taste</li>
             </ol>
-            <img src="img4.jpg" alt="" class="w-64 h-full">
 
 
 
 
         </div>
-        <div class="bred" id="my-settings" role="tabpanel">
+        <div class="bred flex justify-around bg-blue-700 h-80" id="my-settings" role="tabpanel">
+            <img src="img5.jpg" alt="" class="w-72 h-full mr-36">
             <ol class="rew">
                 <h2 class="ret">METHOD OF PREPARATION</h2>
                 List of ingredients:
@@ -218,7 +226,6 @@
                 <li> Serve on a flat plate with any type of drink to your like </li>
                 <li>You can also serve with meat/fish/chicken depending on your taste</li>
             </ol>
-            <img src="img5.jpg" alt="" class="w-72 h-full">
 
         </div>
 

@@ -84,8 +84,42 @@
         .pr {
             padding-left: 60px;
         }
+          .ul {
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+            background-color: rgb(21, 255, 0);
+            width: 400px;
+            padding: 0;
+
+        }
+
+        .nested {
+            list-style-type: none;
+            display: none;
+            background-color: red;
+            color: blueviolet;
+            position: absolute;
+        }
+
+        .drop {
+            background-color: rgb(0, 0, 0);
+            color: aliceblue;
+        }
+
+        .toggle:hover .nested {
+            display: block;
+        }
     </style>
 </head>
+
+  <a href="class.html">
+            <ul class="nested">
+                <a href="class1.html">class 1.</a>
+                <a href="class2.html">class 2.</a>
+                <a href="class3.html">class 3</a>
+            </ul>
+        </a>
 
 <nav class="nav">
     
